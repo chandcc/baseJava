@@ -7,12 +7,10 @@ jdk:1.7<br />
 导入baseweb数据库(mysql)<br/>
 tomcat部署运行就好
 
-
-BaseJava<br / > #
-User privilege management system <br / >
-Jdk:1.7<br / >
-Login account: limingxing<br / >
-Password: 123456<br / >
-To import the Maven project into finished, right-click the pom.xml file, select the run as -->maven install (jar package will automatically download)<br />
-Import baseweb database (MySQL) <br/>
-Tomcat deployment operation
+有个依赖失效了，需要加个依赖
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
